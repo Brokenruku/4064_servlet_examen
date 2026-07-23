@@ -1,0 +1,1 @@
+javac -cp "lib\servlet-api.jar;lib\postgresql-42.7.4.jar" -d classes src\util\*.java src\model\*.java src\servlet\*.java

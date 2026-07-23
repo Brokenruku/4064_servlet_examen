@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+    version="4.0">
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>ordi</servlet-name>
+        <servlet-class>servlet.OrdinateurServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ordi</servlet-name>
+        <url-pattern>/ordi</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showForm</servlet-name>
+        <servlet-class>servlet.ShowFormOrdinateurServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>showForm</servlet-name>
+        <url-pattern>/showForm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteOrdinateur</servlet-name>
+        <servlet-class>servlet.DeleteOrdinateurServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>deleteOrdinateur</servlet-name>
+        <url-pattern>/deleteOrdinateur</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/verLogin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ordinateurEtat</servlet-name>
+        <servlet-class>servlet.OrdinateurEtatServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ordinateurEtat</servlet-name>
+        <url-pattern>/historique_ordi</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ordinateurEtat</servlet-name>
+        <url-pattern>/creer_etat</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>page1</servlet-name>
+        <servlet-class>servlet.PageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>page1</servlet-name>
+        <url-pattern>/page1</url-pattern>
+    </servlet-mapping>
+</web-app>
